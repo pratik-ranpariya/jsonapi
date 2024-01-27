@@ -1,6 +1,6 @@
 {
     "if": {
-        "page": 5 === 5
+        "page": true
     },
     "then": [
         {
