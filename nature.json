@@ -4,44 +4,44 @@
     "category": "nature",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 15,
+    "downloads": 22,
     "share": 3,
-    "saved": 14,
-    "views": 15,
-    "likes": 9
+    "saved": 20,
+    "views": 57,
+    "likes": 23
   },
   {
     "id": 2,
     "category": "sky",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 25,
-    "share": 6,
-    "saved": 10,
-    "views": 49,
-    "likes": 42
+    "downloads": 35,
+    "share": 8,
+    "saved": 13,
+    "views": 78,
+    "likes": 50
   },
   {
     "id": 3,
     "category": "animal",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 26,
-    "share": 8,
-    "saved": 17,
-    "views": 55,
-    "likes": 30
+    "downloads": 38,
+    "share": 10,
+    "saved": 24,
+    "views": 81,
+    "likes": 50
   },
   {
     "id": 4,
     "category": "nature",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 23,
-    "share": 2,
-    "saved": 10,
-    "views": 14,
-    "likes": 25
+    "downloads": 27,
+    "share": 3,
+    "saved": 18,
+    "views": 62,
+    "likes": 48
   },
   {
     "id": 5,
@@ -49,64 +49,64 @@
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
     "downloads": 13,
-    "share": 3,
-    "saved": 24,
-    "views": 18,
-    "likes": 22
+    "share": 6,
+    "saved": 35,
+    "views": 55,
+    "likes": 32
   },
   {
     "id": 6,
     "category": "animal",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 10,
+    "downloads": 17,
     "share": 0,
-    "saved": 22,
-    "views": 41,
-    "likes": 12
+    "saved": 27,
+    "views": 63,
+    "likes": 19
   },
   {
     "id": 7,
     "category": "sky",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 24,
-    "share": 4,
-    "saved": 10,
-    "views": 50,
-    "likes": 43
+    "downloads": 29,
+    "share": 7,
+    "saved": 11,
+    "views": 66,
+    "likes": 64
   },
   {
     "id": 8,
     "category": "sky",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 6,
-    "share": 8,
+    "downloads": 12,
+    "share": 9,
     "saved": 25,
-    "views": 59,
-    "likes": 8
+    "views": 87,
+    "likes": 22
   },
   {
     "id": 9,
     "category": "sky",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 15,
+    "downloads": 24,
     "share": 8,
-    "saved": 9,
-    "views": 69,
-    "likes": 30
+    "saved": 15,
+    "views": 115,
+    "likes": 37
   },
   {
     "id": 10,
     "category": "nature",
     "img": "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
     "isShow": true,
-    "downloads": 13,
+    "downloads": 25,
     "share": 6,
-    "saved": 16,
-    "views": 55,
-    "likes": 21
+    "saved": 18,
+    "views": 83,
+    "likes": 38
   }
 ]
