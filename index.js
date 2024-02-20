@@ -1,10 +1,7 @@
-const express = require('express')
-const app = express()
-const port = 3000
 require('dotenv').config()
 const { GITHUB_ACCESS_TOKEN, GITHUB_USERNAME, GITHUB_REPO_NAME } = process.env
 const fetch = require('node-fetch');
-
+const cron = require('node-cron');
 const fs = require('fs');
 
 const owner = GITHUB_USERNAME;
@@ -21,41 +18,49 @@ const headers = {
     'User-Agent': 'Node.js'
   };
 
-// Read the JSON file
-fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) {
-        console.error('Error reading file:', err);
-        return;
-    }
-
-    // Parse the JSON data
-    let json = JSON.parse(data);
-
-    // Modify the JSON data
-    json.forEach(item => {
-        let increase = getRandomInt(0, 50); // Random increase between 40 and 50
-        item.downloads += increase;
-        item.share += increase;
-        item.saved += increase;
-        item.views += increase;
-        item.likes += increase;
+  // Schedule the cron job to run every 6 hour
+ cron.schedule('0 */6 * * *', () => {
+    console.log("cron called at: ", new Date());
+    updateNatureFileDoc();
     });
 
-    // console.log(json);
+  const updateNatureFileDoc = () => {
+      fs.readFile(filePath, 'utf8', (err, data) => {
+          if (err) {
+              console.error('Error reading file:', err);
+              return;
+          }
+      
+          // Parse the JSON data
+          let json = JSON.parse(data);
+      
+          // Modify the JSON data
+          json.forEach(item => {
+            //   let increase = getRandomInt(0, 50); // Random increase between 40 and 50
+              item.downloads += getRandomInt(0, 15);
+              item.share += getRandomInt(0, 5);
+              item.saved += getRandomInt(0, 15);
+              item.views += getRandomInt(0, 50);
+              item.likes += getRandomInt(0, 25);
 
-    // Write the modified JSON back to the file
-    fs.writeFile(filePath, JSON.stringify(json, null, 2), (err) => {
-        if (err) {
-            console.error('Error writing file:', err);
-            return;
-        }
-
-        const fileContent = fs.readFileSync(filePath, 'utf8');
-
-        createCommit(fileContent)
-        console.log('File has been updated successfully');
-    });
-});
+          });
+      
+          // console.log(json);
+      
+          // Write the modified JSON back to the file
+          fs.writeFile(filePath, JSON.stringify(json, null, 2), (err) => {
+              if (err) {
+                  console.error('Error writing file:', err);
+                  return;
+              }
+      
+              const fileContent = fs.readFileSync(filePath, 'utf8');
+      
+              createCommit(fileContent)
+              console.log('File has been updated successfully');
+          });
+      });
+  }
 
 // Function to generate a random integer between min and max (inclusive)
 function getRandomInt(min, max) {
@@ -128,5 +133,3 @@ async function createCommit(fileContent) {
       console.error('Error creating commit:', error);
     }
   }
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
