@@ -1,0 +1,26 @@
+{
+  "name": "jsonapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratik-ranpariya/jsonapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratik-ranpariya/jsonapi/issues"
+  },
+  "homepage": "https://github.com/pratik-ranpariya/jsonapi#readme",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1"
+  }
+}
